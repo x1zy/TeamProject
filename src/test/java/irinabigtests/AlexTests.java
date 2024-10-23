@@ -13,7 +13,12 @@ public class AlexTests {
         Feline  feline = new Feline();
         Alex alex = new Alex(feline);
         Assert.assertEquals(alex.getFriends(), List.of("Мартин", "Глория", "Мелман"));
-
+    }
+    @Test
+    public void testMethodTwo() throws Exception {
+        Feline  feline = new Feline();
+        Alex alex = new Alex(feline);
+        Assert.assertEquals(alex.getKittens(), 0);
     }
 
 }
