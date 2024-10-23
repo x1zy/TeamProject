@@ -1,4 +1,4 @@
-package src.main.java.allclasses.irinabig;
+package allclasses.irinabig;
 
 import java.util.List;
 

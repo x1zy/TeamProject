@@ -1,9 +1,7 @@
-package src.main.java;
-
-import src.main.java.allclasses.irinabig.Animal;
-import src.main.java.allclasses.irinabig.Cat;
-import src.main.java.allclasses.irinabig.Feline;
-import src.main.java.allclasses.irinabig.Lion;
+import allclasses.irinabig.Animal;
+import allclasses.irinabig.Cat;
+import allclasses.irinabig.Feline;
+import allclasses.irinabig.Lion;
 
 public class Main {
     public static void main(String[] args) {
