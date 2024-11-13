@@ -1,4 +1,4 @@
 package allclasses.fokin;
 
-public class Testclass {
+public class FokinClass {
 }
