@@ -1,4 +1,4 @@
-package ravilova;
+package allclasses.ravilova;
 
 public class RavilovaClass {
 }
