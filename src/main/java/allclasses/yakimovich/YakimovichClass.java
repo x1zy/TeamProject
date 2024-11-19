@@ -1,4 +1,4 @@
-package yakimovich;
+package allclasses.yakimovich;
 
 public class YakimovichClass {
     int a = 5;
