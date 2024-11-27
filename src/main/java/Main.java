@@ -1,3 +1,4 @@
+import allclasses.fokin.FokinClass;
 import allclasses.irinabig.Animal;
 import allclasses.irinabig.Cat;
 import allclasses.irinabig.Feline;
@@ -12,6 +13,7 @@ public class Main {
         // Демонстрация работы классов пакета irinabig
         try {
             showClassesIrinaBig();
+            showClassesFokin();
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
@@ -54,5 +56,22 @@ public class Main {
         }
         System.out.println("Четные числа от 0 до 10: " + test.generateEvenNumbers(10));
     }
+    public static void showClassesFokin() {
+        FokinClass fokinClass = new FokinClass();
 
+        // Выводим сообщение
+        fokinClass.printMessage("Привет из группы С224 от Метафоры(Дениса)!");
+
+        // Рассчитываем сумму двух чисел
+        int sum = fokinClass.calculateSum(5, 10);
+        System.out.println("Сумма 5 и 10 равна: " + sum + ", Ого!");
+
+        // Генерируем массив случайных целых чисел
+        int[] randomArray = fokinClass.generateRandomArray(5, 100); // Массив из 5 случайных чисел до 100
+        System.out.print("Случайный массив: ");
+        for (int num : randomArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println(); // Переход на новую строку
+    }
 }
