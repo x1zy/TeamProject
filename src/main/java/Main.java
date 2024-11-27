@@ -16,7 +16,6 @@ public class Main {
         }
         showClassesPetrov();
 
-        showClassesPetrov();
     }
     public static void showClassesIrinaBig() throws Exception {
         Feline feline = new Feline();
@@ -38,8 +37,5 @@ public class Main {
         programmer.drinkCoffee();
         programmer.debugCode();
     }
-    public  static void showClassesPetrov()  {
-        Programmer programmer = new Programmer("Артем", 18);
-        programmer.writeCode();
-    }
+
 }
