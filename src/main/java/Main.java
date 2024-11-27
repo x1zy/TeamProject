@@ -13,15 +13,15 @@ public class Main {
         // Демонстрация работы классов пакета irinabig
         try {
             showClassesIrinaBig();
-            showClassesFokin();
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
         showClassesPetrov();
         showClassesYakimovich();
-
+        showClassesFokin();
     }
     public static void showClassesIrinaBig() throws Exception {
+        System.out.println("\nДемонстрация работы классов Ирины Георгиевны:\n");
         Feline feline = new Feline();
         System.out.println("Создан объект семейства " + feline.getFamily());
         Animal animal = new Animal();
@@ -36,6 +36,7 @@ public class Main {
     }
 
     public  static void showClassesPetrov() {
+        System.out.println("\nДемонстрация работы классов Петрова Артёма:\n");
         Programmer programmer = new Programmer("Артем", 18);
         programmer.writeCode();
         programmer.drinkCoffee();
@@ -43,6 +44,7 @@ public class Main {
     }
 
     public static void showClassesYakimovich() {
+        System.out.println("\nДемонстрация работы класса Якимовича Андрея:\n");
         YakimovichClass test = new YakimovichClass();
         System.out.println("Результаты вычислений YakimovichClass:");
         System.out.println("Сумма 5 + 3 = " + test.add(5, 3));
@@ -57,6 +59,7 @@ public class Main {
         System.out.println("Четные числа от 0 до 10: " + test.generateEvenNumbers(10));
     }
     public static void showClassesFokin() {
+        System.out.println("\nДемонстрация работы класса Фокина Дениса:\n");
         FokinClass fokinClass = new FokinClass();
 
         // Выводим сообщение
