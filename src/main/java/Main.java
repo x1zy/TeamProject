@@ -20,6 +20,7 @@ public class Main {
         showClassesYakimovich();
         showClassesFokin();
         showClassesVolodin();
+        showClassesBezrukih();
     }
     public static void showClassesIrinaBig() throws Exception {
         System.out.println("\nДемонстрация работы классов Ирины Георгиевны:\n");
@@ -81,6 +82,8 @@ public class Main {
     public static void showClassesVolodin() {
         System.out.println("\nДемонстрация работы класса Володина Андрея:\n");
 
-
+    }
+    public static void showClassesBezrukih() {
+        System.out.println("\nДемонстрация работы класса Безруких Алексея:\n");
     }
 }
