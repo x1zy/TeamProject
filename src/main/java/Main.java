@@ -19,6 +19,7 @@ public class Main {
         showClassesPetrov();
         showClassesYakimovich();
         showClassesFokin();
+        showClassesVolodin();
     }
     public static void showClassesIrinaBig() throws Exception {
         System.out.println("\nДемонстрация работы классов Ирины Георгиевны:\n");
@@ -76,5 +77,10 @@ public class Main {
             System.out.print(num + " ");
         }
         System.out.println(); // Переход на новую строку
+    }
+    public static void showClassesVolodin() {
+        System.out.println("\nДемонстрация работы класса Володина Андрея:\n");
+
+
     }
 }
