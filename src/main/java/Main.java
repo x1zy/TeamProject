@@ -13,9 +13,13 @@ import allclasses.strelnikov.Capybara;
 import allclasses.fokin.FokinClass;
 
 import allclasses.yakimovich.YakimovichClass;
+
+import allclasses.antonov.Bear;
+
 import allclasses.yakovleva.*;
 import allclasses.chernyshova.Mouse;
 import java.time.LocalDate;
+
 
 
 public class Main {
@@ -34,8 +38,8 @@ public class Main {
         showClassesStebunov();
         showClassesFokin();
         showClassesYakimovich();
+        showClassesAntonov();
         showClassesYakovleva();
-
         showClassesVolodin();
         showClassesBezrukih();
         showClassesChernyshova();
@@ -100,6 +104,17 @@ public class Main {
         }
         System.out.println(); // Переход на новую строку
     }
+
+    public  static void showClassesAntonov() {
+        Bear bear = new Bear("Antonov", 10, 2000);
+        bear.yourRank();
+        bear.playGame(); // Сыграли 1 игру
+        bear.playGame(); // Сыграли еще 1 игру
+        bear.playGame();
+        bear.losePts();
+        bear.whoAreYou();
+    }
+
 
     public static void showClassesStebunov() {
         System.out.println("\nДемонстрация работы класса Стебунова Никиты:");
