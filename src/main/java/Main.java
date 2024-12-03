@@ -10,11 +10,13 @@ public class Main {
         // Демонстрация работы классов пакета irinabig
         try {
             showClassesIrinaBig();
-        }catch (Exception e){
+        }
+        catch (Exception e){
             System.out.println(e.getMessage());
         }
 
     }
+    
     public  static void showClassesIrinaBig() throws Exception {
         Feline feline = new Feline();
         System.out.println("Создан объект семейства " + feline.getFamily());
@@ -27,7 +29,5 @@ public class Main {
         System.out.println("Кошка питается => " + cat.getFood().toString());
         System.out.println("Лев питается => " + lion.getFood().toString());
         System.out.println("Кошачьи питаются => " + feline.getFood("Хищник") .toString());
-
-
     }
 }
