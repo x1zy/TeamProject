@@ -3,6 +3,7 @@ import allclasses.irinabig.Cat;
 import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
 import allclasses.petrov.Programmer;
+import allclasses.smirnova.Seal;
 
 public class Main {
     public static void main(String[] args) {
