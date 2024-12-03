@@ -1,3 +1,4 @@
+import allclasses.Portov.Person;
 import allclasses.fokin.FokinClass;
 import allclasses.irinabig.Animal;
 import allclasses.irinabig.Cat;
@@ -19,6 +20,7 @@ public class Main {
         showClassesPetrov();
         showClassesYakimovich();
         showClassesFokin();
+        showClassesPortov();
         showClassesVolodin();
         showClassesBezrukih();
     }
@@ -79,9 +81,20 @@ public class Main {
         }
         System.out.println(); // Переход на новую строку
     }
+
+    public static void showClassesPortov()
+    {
+        System.out.println("\nДемонстрация работы класса Портова Артёма:\n");
+        Person person = new Person("Алексей", 25);
+
+        // Демонстрация работы методов
+        person.introduce(); // Вызываем метод представления
+        person.haveBirthday(); // Увеличиваем возраст
+        person.introduce(); // Проверяем изменения после дня рождения
+    }
+
     public static void showClassesVolodin() {
         System.out.println("\nДемонстрация работы класса Володина Андрея:\n");
-
     }
     public static void showClassesBezrukih() {
         System.out.println("\nДемонстрация работы класса Безруких Алексея:\n");
