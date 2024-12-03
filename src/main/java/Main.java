@@ -13,22 +13,23 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
-        // Демонстрация работы классов 
+
+        // Демонстрация работы классов пакета irinabig
         try {
             showClassesIrinaBig();
-
-            showClassesPetrov();
-            showClassesStebunov();
-            showClassesFokin();
-            showClassesYakimovich();
-            showClassesYakovleva();
-
-            showClassesVolodin();
-            showClassesBezrukih();
         }
         catch (Exception e){
             System.out.println(e.getMessage());
         }
+
+        showClassesPetrov();
+        showClassesStebunov();
+        showClassesFokin();
+        showClassesYakimovich();
+        showClassesYakovleva();
+
+        showClassesVolodin();
+        showClassesBezrukih();
     }
 
     public static void showClassesIrinaBig() throws Exception {
