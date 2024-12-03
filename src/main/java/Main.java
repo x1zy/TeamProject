@@ -46,6 +46,7 @@ public class Main {
         showClassesChernyshova();
         showClassesRavilova();
         showClassesStrelnikov();
+        showClassesSmirnova();
     }
 
     public static void showClassesIrinaBig() throws Exception {
@@ -220,6 +221,15 @@ public class Main {
         capy.play(1.5);            // Капибара играет
         capy.growOlder();          // Капибара стареет
         capy.displayInfo();        // Ещё раз печатаем информацию
+    }
+
+    public static void showClassesSmirnova(){
+        System.out.println("\nДемонстрация работы классов Смирновой Ирины:\n");
+        Seal defaultSeal = new Seal();
+        defaultSeal.triks();
+
+        Seal customSeal = new Seal("Петя", 5, 24, 100);
+        customSeal.triks();
     }
 
 }
