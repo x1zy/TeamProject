@@ -5,6 +5,7 @@ import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
 import allclasses.petrov.Programmer;
 import allclasses.yakimovich.YakimovichClass;
+import allclasses.antonov.Bear;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +20,7 @@ public class Main {
         }
         showClassesPetrov();
         showClassesYakimovich();
+        showClassesAntonov();
 
     }
     public static void showClassesIrinaBig() throws Exception {
@@ -73,5 +75,14 @@ public class Main {
             System.out.print(num + " ");
         }
         System.out.println(); // Переход на новую строку
+    }
+    public  static void showClassesAntonov() {
+        Bear bear = new Bear("Antonov", 10, 2000);
+        bear.yourRank();
+        bear.playGame(); // Сыграли 1 игру
+        bear.playGame(); // Сыграли еще 1 игру
+        bear.playGame();
+        bear.losePts();
+        bear.whoAreYou();
     }
 }
