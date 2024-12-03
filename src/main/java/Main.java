@@ -146,7 +146,7 @@ public class Main {
         System.out.println("Сложение 7 + 5 = " + ravilovaClass.addNumbers(7, 5));
 
         // Демонстрация метода countWords
-        String sentence = "Привет, мир! Как дела?";
+        String sentence = "Сегодня вторник, завтра среда";
         System.out.println("Количество слов в строке \"" + sentence + "\" = " + ravilovaClass.countWords(sentence));
 
         // Демонстрация метода findMax
