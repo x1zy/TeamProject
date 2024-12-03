@@ -3,6 +3,9 @@ import allclasses.irinabig.Cat;
 import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
 import allclasses.petrov.Programmer;
+
+import allclasses.smirnova.Seal;
+
 import allclasses.stebunov.Wolf;
 
 import allclasses.strelnikov.Capybara;
@@ -13,6 +16,7 @@ import allclasses.yakimovich.YakimovichClass;
 import allclasses.yakovleva.*;
 import allclasses.chernyshova.Mouse;
 import java.time.LocalDate;
+
 
 public class Main {
     public static void main(String[] args) {
