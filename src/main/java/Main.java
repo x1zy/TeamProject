@@ -7,6 +7,7 @@ import allclasses.petrov.Programmer;
 import allclasses.stebunov.Wolf;
 import allclasses.yakimovich.YakimovichClass;
 import allclasses.chernyshova.Mouse;
+import allclasses.ravilova.RavilovaClass;
 import java.time.LocalDate;
 
 public class Main {
@@ -26,6 +27,7 @@ public class Main {
         showClassesVolodin();
         showClassesBezrukih();
         showClassesChernyshova();
+        showClassesRavilova();
     }
     public static void showClassesIrinaBig() throws Exception {
         System.out.println("\nДемонстрация работы классов Ирины Георгиевны:\n");
@@ -135,6 +137,28 @@ public class Main {
         System.out.println("\nПопытка установить будущую дату рождения:");
         customMouse.setBirthDate(LocalDate.now().plusDays(1));
         System.out.println("Дата рождения после проверки: " + customMouse.getBirthDate());
+    }
+    public static void showClassesRavilova() {
+        System.out.println("\nДемонстрация работы класса Равиловой:\n");
+        RavilovaClass ravilovaClass = new RavilovaClass();
+
+        // Демонстрация метода addNumbers
+        System.out.println("Сложение 7 + 5 = " + ravilovaClass.addNumbers(7, 5));
+
+        // Демонстрация метода countWords
+        String sentence = "Привет, мир! Как дела?";
+        System.out.println("Количество слов в строке \"" + sentence + "\" = " + ravilovaClass.countWords(sentence));
+
+        // Демонстрация метода findMax
+        int[] numbers = {2, 8, 1, 15, 6};
+        System.out.println("Максимальное число в массиве {2, 8, 1, 15, 6} = " + ravilovaClass.findMax(numbers));
+
+        // Демонстрация обработки исключения для findMax
+        try {
+            System.out.println("Максимальное число в пустом массиве: " + ravilovaClass.findMax(new int[]{}));
+        } catch (IllegalArgumentException e) {
+            System.out.println("Ошибка: " + e.getMessage());
+        }
     }
 
 
