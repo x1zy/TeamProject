@@ -5,6 +5,7 @@ import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
 import allclasses.petrov.Programmer;
 import allclasses.stebunov.Wolf;
+import allclasses.strelnikov.Capybara;
 import allclasses.yakimovich.YakimovichClass;
 import allclasses.chernyshova.Mouse;
 import java.time.LocalDate;
@@ -26,6 +27,7 @@ public class Main {
         showClassesVolodin();
         showClassesBezrukih();
         showClassesChernyshova();
+        showClassesStrelnikov();
     }
     public static void showClassesIrinaBig() throws Exception {
         System.out.println("\nДемонстрация работы классов Ирины Георгиевны:\n");
@@ -137,5 +139,17 @@ public class Main {
         System.out.println("Дата рождения после проверки: " + customMouse.getBirthDate());
     }
 
+    public static void showClassesStrelnikov(){
+        // Создаём объект капибары
+        Capybara capy = new Capybara("Каппи", 3, 35.5);
+        // Тестируем методы
+        capy.displayInfo();        // Печатаем информацию
+        capy.speak();              // Капибара говорит
+        capy.eat(2.0);             // Капибара ест
+        capy.swim();               // Капибара плавает
+        capy.play(1.5);            // Капибара играет
+        capy.growOlder();          // Капибара стареет
+        capy.displayInfo();        // Ещё раз печатаем информацию
+    }
 
 }
