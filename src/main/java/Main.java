@@ -141,8 +141,8 @@ public class Main {
 
         // Демонстрация метода howl
         System.out.println("\nДемонстрация метода - Волк воет:");
-        defaultWolf.howl();
-        customWolf.howl();
+        System.out.println(defaultWolf.howl());
+        System.out.println(customWolf.howl());
     }
 
     public static void showClassesYakovleva() {
