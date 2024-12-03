@@ -4,6 +4,7 @@ import allclasses.irinabig.Cat;
 import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
 import allclasses.petrov.Programmer;
+import allclasses.stebunov.Wolf;
 import allclasses.yakimovich.YakimovichClass;
 
 public class Main {
@@ -19,6 +20,7 @@ public class Main {
         showClassesPetrov();
         showClassesYakimovich();
         showClassesFokin();
+        showClassesStebunov();
         showClassesVolodin();
         showClassesBezrukih();
     }
@@ -79,6 +81,34 @@ public class Main {
         }
         System.out.println(); // Переход на новую строку
     }
+
+    public static void showClassesStebunov() {
+        System.out.println("\nДемонстрация работы класса Стебунова Никиты:\n");
+
+        // Создание волка с помощью конструктора по умолчанию
+        Wolf defaultWolf = new Wolf();
+        System.out.println("Волк, созданный с использованием конструктора по умолчанию:");
+        defaultWolf.printInfo();
+
+        System.out.println("Изменение имени, возраста и веса волка. Измененный волк:");
+        // Изменение параметров волка
+        defaultWolf.setName("Белый");
+        defaultWolf.setAge(5);
+        defaultWolf.setWeight(35.5);
+        // Вывод информации о волке
+        defaultWolf.printInfo();
+
+        // Создание волка с параметрами
+        Wolf customWolf = new Wolf("Серый", 7, 42.3);
+        System.out.println("\nВолк, созданный с использованием конструктора с параметрами:");
+        customWolf.printInfo();
+
+        // Демонстрация метода howl
+        System.out.println("\nДемонстрация метода - Волк воет:");
+        defaultWolf.howl();
+        customWolf.howl();
+    }
+
     public static void showClassesVolodin() {
         System.out.println("\nДемонстрация работы класса Володина Андрея:\n");
 
