@@ -7,7 +7,7 @@ import allclasses.stebunov.Wolf;
 import allclasses.fokin.FokinClass;
 import allclasses.yakimovich.YakimovichClass;
 import allclasses.yakovleva.*;
-
+import allclasses.chernyshova.Mouse;
 import java.time.LocalDate;
 
 public class Main {
@@ -30,6 +30,7 @@ public class Main {
 
         showClassesVolodin();
         showClassesBezrukih();
+        showClassesChernyshova();
     }
 
     public static void showClassesIrinaBig() throws Exception {
@@ -141,4 +142,23 @@ public class Main {
     public static void showClassesBezrukih() {
         System.out.println("\nДемонстрация работы класса Безруких Алексея:\n");
     }
+
+    public static void showClassesChernyshova() {
+        System.out.println("\nДемонстрация работы классов Чернышовой Софьи:\n");
+
+        // Создаем объект пользовательской мыши
+        Mouse customMouse = new Mouse("белая", "полевка", 30.5, LocalDate.of(2023, 11, 1));
+        System.out.println("Создан объект пользовательской мыши:");
+        customMouse.describeMouse();
+
+        // Проверяем возраст в днях
+        System.out.println("\nВозраст пользовательской мыши в днях: " + customMouse.getAgeInDays());
+
+        // Проверка с неверной датой рождения
+        System.out.println("\nПопытка установить будущую дату рождения:");
+        customMouse.setBirthDate(LocalDate.now().plusDays(1));
+        System.out.println("Дата рождения после проверки: " + customMouse.getBirthDate());
+    }
+
+
 }
