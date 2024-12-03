@@ -1,32 +1,38 @@
-import allclasses.fokin.FokinClass;
 import allclasses.irinabig.Animal;
 import allclasses.irinabig.Cat;
 import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
 import allclasses.petrov.Programmer;
 import allclasses.stebunov.Wolf;
+import allclasses.fokin.FokinClass;
 import allclasses.yakimovich.YakimovichClass;
+import allclasses.yakovleva.*;
+
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
-
-        // Демонстрация работы классов пакета irinabig
+        // Демонстрация работы классов 
         try {
             showClassesIrinaBig();
+
+            showClassesPetrov();
+            showClassesStebunov();
+            showClassesFokin();
+            showClassesYakimovich();
+            showClassesYakovleva();
+
+            showClassesVolodin();
+            showClassesBezrukih();
         }
         catch (Exception e){
             System.out.println(e.getMessage());
         }
-        showClassesPetrov();
-        showClassesYakimovich();
-        showClassesFokin();
-        showClassesStebunov();
-        showClassesVolodin();
-        showClassesBezrukih();
     }
+
     public static void showClassesIrinaBig() throws Exception {
-        System.out.println("\nДемонстрация работы классов Ирины Георгиевны:\n");
+        System.out.println("\nДемонстрация работы классов Ирины Георгиевны:");
         Feline feline = new Feline();
         System.out.println("Создан объект семейства " + feline.getFamily());
         Animal animal = new Animal();
@@ -41,7 +47,7 @@ public class Main {
     }
 
     public  static void showClassesPetrov() {
-        System.out.println("\nДемонстрация работы классов Петрова Артёма:\n");
+        System.out.println("\nДемонстрация работы классов Петрова Артёма:");
         Programmer programmer = new Programmer("Артем", 18);
         programmer.writeCode();
         programmer.drinkCoffee();
@@ -49,7 +55,7 @@ public class Main {
     }
 
     public static void showClassesYakimovich() {
-        System.out.println("\nДемонстрация работы класса Якимовича Андрея:\n");
+        System.out.println("\nДемонстрация работы класса Якимовича Андрея:");
         YakimovichClass test = new YakimovichClass();
         System.out.println("Результаты вычислений YakimovichClass:");
         System.out.println("Сумма 5 + 3 = " + test.add(5, 3));
@@ -63,8 +69,9 @@ public class Main {
         }
         System.out.println("Четные числа от 0 до 10: " + test.generateEvenNumbers(10));
     }
+
     public static void showClassesFokin() {
-        System.out.println("\nДемонстрация работы класса Фокина Дениса:\n");
+        System.out.println("\nДемонстрация работы класса Фокина Дениса:");
         FokinClass fokinClass = new FokinClass();
 
         // Выводим сообщение
@@ -84,7 +91,7 @@ public class Main {
     }
 
     public static void showClassesStebunov() {
-        System.out.println("\nДемонстрация работы класса Стебунова Никиты:\n");
+        System.out.println("\nДемонстрация работы класса Стебунова Никиты:");
 
         // Создание волка с помощью конструктора по умолчанию
         Wolf defaultWolf = new Wolf();
@@ -110,10 +117,26 @@ public class Main {
         customWolf.howl();
     }
 
+    public static void showClassesYakovleva() {
+        System.out.println("\nДемонстрация работы класса Яковлевой Анны:");
+        
+        // Создание оленя с помощью конструктора по умолчанию
+        Deer deer = new Deer("Lin", LocalDate.of(2020, 11, 3), Type.благородный);
+        deer.Info();
+
+        // Изменение параметров оленя
+        deer.setName("Linnie");
+        System.out.println("Изменение имени..");
+        deer.Info();
+
+        // Демонстрация метода Age
+        System.out.println("Возраст оленя на данный момент: " + deer.Age());
+    }
+
     public static void showClassesVolodin() {
         System.out.println("\nДемонстрация работы класса Володина Андрея:\n");
-
     }
+
     public static void showClassesBezrukih() {
         System.out.println("\nДемонстрация работы класса Безруких Алексея:\n");
     }
