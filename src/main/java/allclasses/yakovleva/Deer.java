@@ -42,4 +42,11 @@ public class Deer
 
         return Period.between(birthday, now).getYears();
     }
+
+    public void Info()
+    {
+        System.out.println("Олень " + this.getName() 
+              + "\nДата рождения: " + this.getBirthday() 
+              + "\nТип: " + this.getType());
+    }
 }
