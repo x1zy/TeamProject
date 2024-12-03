@@ -166,6 +166,7 @@ public class Main {
     }
 
     public static void showClassesStrelnikov(){
+        System.out.println("\nДемонстрация работы классов Стрельникова Максима:\n");
         // Создаём объект капибары
         Capybara capy = new Capybara("Каппи", 3, 35.5);
         // Тестируем методы
