@@ -6,6 +6,12 @@ import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
 import allclasses.petrov.Programmer;
 import allclasses.yakimovich.YakimovichClass;
+import allclasses.antonov.Bear;
+import allclasses.yakovleva.*;
+import allclasses.chernyshova.Mouse;
+import allclasses.ravilova.RavilovaClass;
+import allclasses.zolina.Snake;
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,6 +29,12 @@ public class Main {
         showClassesPortov();
         showClassesVolodin();
         showClassesBezrukih();
+        showClassesChernyshova();
+        showClassesRavilova();
+        showClassesStrelnikov();
+        showClassesSmirnova();
+        showClassesZolina();
+
     }
     public static void showClassesIrinaBig() throws Exception {
         System.out.println("\nДемонстрация работы классов Ирины Георгиевны:\n");
@@ -99,4 +111,85 @@ public class Main {
     public static void showClassesBezrukih() {
         System.out.println("\nДемонстрация работы класса Безруких Алексея:\n");
     }
+
+    public static void showClassesChernyshova() {
+        System.out.println("\nДемонстрация работы классов Чернышовой Софьи:\n");
+
+        // Создаем объект пользовательской мыши
+        Mouse customMouse = new Mouse("белая", "полевка", 30.5, LocalDate.of(2023, 11, 1));
+        System.out.println("Создан объект пользовательской мыши:");
+        customMouse.describeMouse();
+
+        // Проверяем возраст в днях
+        System.out.println("\nВозраст пользовательской мыши в днях: " + customMouse.getAgeInDays());
+
+        // Проверка с неверной датой рождения
+        System.out.println("\nПопытка установить будущую дату рождения:");
+        customMouse.setBirthDate(LocalDate.now().plusDays(1));
+        System.out.println("Дата рождения после проверки: " + customMouse.getBirthDate());
+    }
+    public static void showClassesRavilova() {
+        System.out.println("\nДемонстрация работы класса Равиловой:\n");
+        RavilovaClass ravilovaClass = new RavilovaClass();
+
+        // Демонстрация метода addNumbers
+        System.out.println("Сложение 7 + 5 = " + ravilovaClass.addNumbers(7, 5));
+
+        // Демонстрация метода countWords
+        String sentence = "Сегодня вторник, завтра среда";
+        System.out.println("Количество слов в строке \"" + sentence + "\" = " + ravilovaClass.countWords(sentence));
+
+        // Демонстрация метода findMax
+        int[] numbers = {2, 8, 1, 15, 6};
+        System.out.println("Максимальное число в массиве {2, 8, 1, 15, 6} = " + ravilovaClass.findMax(numbers));
+
+        // Демонстрация обработки исключения для findMax
+        try {
+            System.out.println("Максимальное число в пустом массиве: " + ravilovaClass.findMax(new int[]{}));
+        } catch (IllegalArgumentException e) {
+            System.out.println("Ошибка: " + e.getMessage());
+        }
+    }
+
+    public static void showClassesStrelnikov(){
+        System.out.println("\nДемонстрация работы классов Стрельникова Максима:\n");
+        // Создаём объект капибары
+        Capybara capy = new Capybara("Каппи", 3, 35.5);
+        // Тестируем методы
+        capy.displayInfo();        // Печатаем информацию
+        capy.speak();              // Капибара говорит
+        capy.eat(2.0);             // Капибара ест
+        capy.swim();               // Капибара плавает
+        capy.play(1.5);            // Капибара играет
+        capy.growOlder();          // Капибара стареет
+        capy.displayInfo();        // Ещё раз печатаем информацию
+    }
+
+    public static void showClassesSmirnova(){
+        System.out.println("\nДемонстрация работы классов Смирновой Ирины:\n");
+        Seal defaultSeal = new Seal();
+        defaultSeal.triks();
+
+        Seal customSeal = new Seal("Петя", 5, 24, 100);
+        customSeal.triks();
+    }
+
+    public static void showClassesZolina(){
+        System.out.println("\nДемонстрация работы классов Золиной Виктории:\n");
+        // Создаем три змеи
+        Snake cobra = new Snake("Кобра", 5, 300, 2);
+        Snake python = new Snake("Питон", 3, 250, 5);
+        Snake boa = new Snake("Удав", 6, 400, 3);
+
+        // Каждая змея шипит
+        cobra.printCharacteristics(); // Вывод характеристик змеи
+        cobra.hiss();
+
+        python.printCharacteristics(); // Вывод характеристик змеи
+        python.hiss();
+
+        boa.printCharacteristics(); // Вывод характеристик змеи
+        boa.hiss();
+    }
+
 }
