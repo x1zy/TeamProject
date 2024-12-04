@@ -1,33 +1,20 @@
-import allclasses.irinabig.Animal;
-import allclasses.irinabig.Cat;
-import allclasses.irinabig.Feline;
-import allclasses.irinabig.Lion;
+import allclasses.irinabig.*;
 import allclasses.petrov.Programmer;
-
 import allclasses.smirnova.Seal;
-
 import allclasses.stebunov.Wolf;
-
 import allclasses.strelnikov.Capybara;
-
 import allclasses.fokin.FokinClass;
-
 import allclasses.yakimovich.YakimovichClass;
-
 import allclasses.antonov.Bear;
-
 import allclasses.yakovleva.*;
 import allclasses.chernyshova.Mouse;
 import allclasses.ravilova.RavilovaClass;
 import allclasses.zolina.Snake;
 import java.time.LocalDate;
 
-
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
-
         // Демонстрация работы классов пакета irinabig
         try {
             showClassesIrinaBig();
