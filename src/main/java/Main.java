@@ -19,6 +19,8 @@ import allclasses.antonov.Bear;
 import allclasses.yakovleva.*;
 import allclasses.chernyshova.Mouse;
 import allclasses.ravilova.RavilovaClass;
+import allclasses.zolina.Snake;
+
 import java.time.LocalDate;
 
 
@@ -47,6 +49,7 @@ public class Main {
         showClassesRavilova();
         showClassesStrelnikov();
         showClassesSmirnova();
+        showClassesZolina();
     }
 
     public static void showClassesIrinaBig() throws Exception {
@@ -232,4 +235,21 @@ public class Main {
         customSeal.triks();
     }
 
+    public static void showClassesZolina(){
+        System.out.println("\nДемонстрация работы классов Золиной Виктории:\n");
+        // Создаем три змеи
+        Snake cobra = new Snake("Кобра", 5, 300, 2);
+        Snake python = new Snake("Питон", 3, 250, 5);
+        Snake boa = new Snake("Удав", 6, 400, 3);
+
+        // Каждая змея шипит
+        cobra.printCharacteristics(); // Вывод характеристик змеи
+        cobra.hiss();
+
+        python.printCharacteristics(); // Вывод характеристик змеи
+        python.hiss();
+
+        boa.printCharacteristics(); // Вывод характеристик змеи
+        boa.hiss();
+    }
 }
