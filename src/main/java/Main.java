@@ -1,5 +1,6 @@
 import allclasses.irinabig.*;
 import allclasses.petrov.Programmer;
+import allclasses.Baranov.Baranov;
 import allclasses.smirnova.Seal;
 import allclasses.stebunov.Wolf;
 import allclasses.strelnikov.Capybara;
@@ -25,6 +26,7 @@ public class Main {
         }
 
         showClassesPetrov();
+        showClassesBaranov();
         showClassesStebunov();
         showClassesFokin();
         showClassesYakimovich();
@@ -248,5 +250,16 @@ public class Main {
 
         System.out.println(trueCat.CheckCat());
         System.out.println(falseCat.CheckCat());
+    }
+}
+    public static void showClassesBaranov() {
+        Baranov baranov = new Baranov();
+
+        // Пример использования методов
+        int sum = baranov.add(5, 3);
+        int product = baranov.multiply(5, 3);
+
+        System.out.println("Сумма: " + sum);
+        System.out.println("Произведение: " + product);
     }
 }
