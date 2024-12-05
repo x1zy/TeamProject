@@ -1,3 +1,5 @@
+import allclasses.tovstogan.Student;
+import allclasses.tovstogan.Tovstogan;
 import allclasses.irinabig.*;
 import allclasses.petrov.Programmer;
 import allclasses.Baranov.Baranov;
@@ -20,8 +22,8 @@ public class Main {
         // Демонстрация работы классов пакета irinabig
         try {
             showClassesIrinaBig();
-        }
-        catch (Exception e){
+            showClassesTovstogan();
+        }catch (Exception e){
             System.out.println(e.getMessage());
         }
 
@@ -264,4 +266,13 @@ public class Main {
         System.out.println("Сумма: " + sum);
         System.out.println("Произведение: " + product);
     }
+  
+    public static void showClassesTovstogan() {
+        Tovstogan T = new Tovstogan();
+        Student S = new Student("Имя", "Фамилия", 222);
+        // Пример использования методов
+        System.out.println(T.returnHello());
+        System.out.println(S.getGroup());
+    }
 }
+
