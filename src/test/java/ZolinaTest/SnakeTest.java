@@ -10,21 +10,51 @@ import java.io.PrintStream;
 public class SnakeTest {
 
     @Test
-    public void testSnakeDefaultConstructor() {
+    public void testSnakeDefaultKind() {
         Snake snake = new Snake();
         Assert.assertEquals("Удав", getFieldValue(snake, "kind"));
+    }
+
+    @Test
+    public void testSnakeDefaultAge() {
+        Snake snake = new Snake();
         Assert.assertEquals(2, getFieldValue(snake, "age"));
+    }
+
+    @Test
+    public void testSnakeDefaultLength() {
+        Snake snake = new Snake();
         Assert.assertEquals(60, getFieldValue(snake, "length"));
+    }
+
+    @Test
+    public void testSnakeDefaultApple() {
+        Snake snake = new Snake();
         Assert.assertEquals(1, getFieldValue(snake, "apple"));
     }
 
     @Test
-    public void testSnakeParameterizedConstructor() {
+    public void testSnakeParameterizedKind() {
         Snake snake = new Snake("Кобра", 5, 150, 3);
         Assert.assertEquals("Кобра", getFieldValue(snake, "kind"));
+    }
+
+    @Test
+    public void testSnakeParameterizedAge() {
+        Snake snake = new Snake("Кобра", 5, 150, 3);
         Assert.assertEquals(5, getFieldValue(snake, "age"));
+    }
+
+    @Test
+    public void testSnakeParameterizedLength() {
+        Snake snake = new Snake("Кобра", 5, 150, 3);
         Assert.assertEquals(150, getFieldValue(snake, "length"));
-        Assert.assertEquals(0, getFieldValue(snake, "apple")); // Default value for apple in constructor
+    }
+
+    @Test
+    public void testSnakeParameterizedApple() {
+        Snake snake = new Snake("Кобра", 5, 150, 3);
+        Assert.assertEquals(3, getFieldValue(snake, "apple"));
     }
 
     @Test
@@ -35,9 +65,9 @@ public class SnakeTest {
 
         snake.hiss();
 
-        String expectedOutput = "Шшшш...";
-        Assert.assertTrue(outContent.toString().trim().contains(expectedOutput));
+        Assert.assertTrue(outContent.toString().trim().contains("Шшшш..."));
     }
+
 
     // Вспомогательный метод для доступа к приватным полям через reflection
     private Object getFieldValue(Object obj, String fieldName) {
