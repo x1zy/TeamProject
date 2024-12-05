@@ -2,6 +2,7 @@ import allclasses.irinabig.Animal;
 import allclasses.irinabig.Cat;
 import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
+import allclasses.tovstogan.Tovstogan;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +11,7 @@ public class Main {
         // Демонстрация работы классов пакета irinabig
         try {
             showClassesIrinaBig();
+            showClassesTovstogan();
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
@@ -29,5 +31,12 @@ public class Main {
         System.out.println("Кошачьи питаются => " + feline.getFood("Хищник") .toString());
 
 
+    }
+    public static void showClassesTovstogan() {
+        Tovstogan T = new Tovstogan();
+        Student S = new Student("Имя", "Фамилия", 222);
+        // Пример использования методов
+        System.out.println(T.returnHello());
+        System.out.println(S.getGroup());
     }
 }
