@@ -161,6 +161,7 @@ public class Main {
 
     public static void showClassesBezrukih() {
         System.out.println("\nДемонстрация работы класса Безруких Алексея:\n");
+
     }
 
     public static void showClassesChernyshova() {
@@ -251,7 +252,8 @@ public class Main {
         System.out.println(trueCat.CheckCat());
         System.out.println(falseCat.CheckCat());
     }
-}
+
+
     public static void showClassesBaranov() {
         Baranov baranov = new Baranov();
 
