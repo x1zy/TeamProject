@@ -1,8 +1,8 @@
-package allclasses.Baranov;
+package BaranovTest;
 
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import allclasses.Baranov.Baranov;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class BaranovTest {
 
@@ -10,21 +10,22 @@ public class BaranovTest {
     public void testAdd() {
         Baranov baranov = new Baranov();
         // Тест на сложение положительных чисел
-        Assert.assertEquals(baranov.add(5, 3), 8);
+        assertEquals(8, baranov.add(5, 3));
         // Тест на сложение отрицательных чисел
-        Assert.assertEquals(baranov.add(-5, -3), -8);
+        assertEquals(-8, baranov.add(-5, -3));
         // Тест на сложение положительного и отрицательного числа
-        Assert.assertEquals(baranov.add(5, -3), 2);
+        assertEquals(2, baranov.add(5, -3));
     }
 
     @Test
     public void testMultiply() {
         Baranov baranov = new Baranov();
         // Тест на умножение положительных чисел
-        Assert.assertEquals(baranov.multiply(5, 3), 15);
+        assertEquals(15, baranov.multiply(5, 3));
         // Тест на умножение отрицательных чисел
-        Assert.assertEquals(baranov.multiply(-5, -3), 15);
+        assertEquals(15, baranov.multiply(-5, -3));
         // Тест на умножение положительного и отрицательного числа
-        Assert.assertEquals(baranov.multiply(5, -3), -15);
+        assertEquals(-15, baranov.multiply(5, -3));
     }
 }
+
