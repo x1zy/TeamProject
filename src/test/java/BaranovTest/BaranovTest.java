@@ -6,26 +6,41 @@ import static org.junit.Assert.*;
 
 public class BaranovTest {
 
+    // Тесты для сложения
     @Test
-    public void testAdd() {
+    public void testAddPositiveNumbers() {
         Baranov baranov = new Baranov();
-        // Тест на сложение положительных чисел
         assertEquals(8, baranov.add(5, 3));
-        // Тест на сложение отрицательных чисел
+    }
+
+    @Test
+    public void testAddNegativeNumbers() {
+        Baranov baranov = new Baranov();
         assertEquals(-8, baranov.add(-5, -3));
-        // Тест на сложение положительного и отрицательного числа
+    }
+
+    @Test
+    public void testAddPositiveAndNegativeNumbers() {
+        Baranov baranov = new Baranov();
         assertEquals(2, baranov.add(5, -3));
     }
 
+    // Тесты для умножения
     @Test
-    public void testMultiply() {
+    public void testMultiplyPositiveNumbers() {
         Baranov baranov = new Baranov();
-        // Тест на умножение положительных чисел
         assertEquals(15, baranov.multiply(5, 3));
-        // Тест на умножение отрицательных чисел
+    }
+
+    @Test
+    public void testMultiplyNegativeNumbers() {
+        Baranov baranov = new Baranov();
         assertEquals(15, baranov.multiply(-5, -3));
-        // Тест на умножение положительного и отрицательного числа
+    }
+
+    @Test
+    public void testMultiplyPositiveAndNegativeNumbers() {
+        Baranov baranov = new Baranov();
         assertEquals(-15, baranov.multiply(5, -3));
     }
 }
-
