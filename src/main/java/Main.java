@@ -11,6 +11,7 @@ import allclasses.yakovleva.*;
 import allclasses.chernyshova.Mouse;
 import allclasses.ravilova.RavilovaClass;
 import allclasses.zolina.Snake;
+import allclasses.gavrilov.Cats;
 import java.time.LocalDate;
 
 public class Main {
@@ -38,7 +39,7 @@ public class Main {
         showClassesStrelnikov();
         showClassesSmirnova();
         showClassesZolina();
-
+        showClassesGavrilov();
     }
 
     public static void showClassesIrinaBig() throws Exception {
@@ -240,6 +241,17 @@ public class Main {
         boa.printCharacteristics(); // Вывод характеристик змеи
         boa.hiss();
     }
+
+    public static void showClassesGavrilov() {
+        System.out.println("\nДемонстрация работы класса Гаврилова Романа:\n");
+
+        Cats trueCat = new Cats("Борис");
+        Cats falseCat = new Cats("Феликс");
+
+        System.out.println(trueCat.CheckCat());
+        System.out.println(falseCat.CheckCat());
+    }
+}
     public static void showClassesBaranov() {
         Baranov baranov = new Baranov();
 
@@ -251,5 +263,3 @@ public class Main {
         System.out.println("Произведение: " + product);
     }
 }
-
-
