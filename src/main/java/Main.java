@@ -2,6 +2,7 @@ import allclasses.irinabig.Animal;
 import allclasses.irinabig.Cat;
 import allclasses.irinabig.Feline;
 import allclasses.irinabig.Lion;
+import allclasses.tovstogan.Student;
 import allclasses.tovstogan.Tovstogan;
 
 public class Main {
