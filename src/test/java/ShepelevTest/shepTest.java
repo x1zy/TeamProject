@@ -14,6 +14,6 @@ public class shepTest {
     @Test
     public void CheckFalseDogTest(){
         shep dog = new shep("Феликс");
-        Assert.assertEquals("Вашего кота нет в базе данных", dog.CheckDog());
+        Assert.assertEquals("Вашей собаки нет в базе данных", dog.CheckDog());
     }
 }

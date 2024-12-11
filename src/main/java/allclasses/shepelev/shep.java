@@ -1,13 +1,14 @@
 package allclasses.shepelev;
 
+
 import java.util.List;
 
 public class shep {
     String _dogName;
     List<String> _dogList = List.of("Бобик", "Макс", "Денчик", "Рыжик", "Влад");
 
-    public shep(String catName){
-        _dogName = catName;
+    public shep(String dogName){
+        _dogName = dogName;
     }
 
     public String CheckDog(){
@@ -18,4 +19,5 @@ public class shep {
         }
         return "Вашей собаки нет в базе данных";
     }
+
 }
