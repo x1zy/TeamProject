@@ -1,3 +1,4 @@
+import allclasses.shepelev.shep;
 import allclasses.tovstogan.Student;
 import allclasses.tovstogan.Tovstogan;
 import allclasses.irinabig.*;
@@ -42,6 +43,8 @@ public class Main {
         showClassesSmirnova();
         showClassesZolina();
         showClassesGavrilov();
+        showClassesShepelev();
+
     }
 
     public static void showClassesIrinaBig() throws Exception {
@@ -276,5 +279,17 @@ public class Main {
         System.out.println(T.returnHello());
         System.out.println(S.getGroup());
     }
+
+    public static void showClassesShepelev() {
+        System.out.println("\nДемонстрация работы класса Шепелева Егора:\n");
+
+        shep trueDog = new shep("Макс");
+        shep falseDog = new shep("Гриша");
+
+        System.out.println(trueDog.CheckDog());
+        System.out.println(falseDog.CheckDog());
+    }
+
+
 }
 
