@@ -1,4 +1,4 @@
-package Saprykin
+package Saprykin;
 
 import allclasses.saprykin.SaprykinClass;
 import org.junit.Assert;
