@@ -1,4 +1,4 @@
-package allclasses.Saprykin;
+package allclasses.saprykin;
 
 // Класс для описания студента
 public class SaprykinClass {

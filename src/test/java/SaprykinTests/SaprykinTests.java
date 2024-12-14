@@ -1,10 +1,8 @@
-package allclasses.SaprykinTests;
-
 import allclasses.saprykin.SaprykinClass;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SaprykinClassTests {
+public class SaprykinTests {
 
     @Test
     public void testGetStudentInfo() {
