@@ -2,6 +2,7 @@ package gusevtests;
 import allclasses.gusev.Student;
 
 import org.junit.Assert;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 
 import java.time.LocalDate;
@@ -9,6 +10,7 @@ import java.time.LocalDate;
 public class CalculateCourseTests {
 
     @Test
+    @DisplayName("Проверка что на 1 курсе учится студент 16-17 лет")
     public void testCalculateCourse_16To17Age_ReturnsOne() {
         Student student = new Student("Борис", "Барсов", LocalDate.of(2007, 1, 1), "Computer Science");
         int result = student.calculateCourse();
